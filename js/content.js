@@ -36,7 +36,7 @@ async function init(){
         const button = document.createElement('button');
         const isExist = result.filter((elem) => elem.car_id == info.id).length > 0;
 
-        button.className = (isExist) ? 'check-button' :'my-button';
+        button.className = (isExist) ? 'check-button choose-car-button' : 'my-button choose-car-button';
         button.innerHTML = (isExist) ? `${added} <p>Added</p>` : `${add} <p>Add</p>`;
         button.onclick = async () => {
             
@@ -45,7 +45,7 @@ async function init(){
             }
             const result = await requestBackground(new ExtensionMessage(config.keys.addCarInfo, info));
             console.log(result);
-            button.className = 'check-button';
+            button.className = 'check-button choose-car-button';
             button.innerHTML = `${added} <p>Added</p>`;
         }
 

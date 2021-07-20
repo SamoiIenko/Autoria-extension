@@ -1,4 +1,4 @@
-.my-button {
+.choose-car-button {
     width: 90px;
     align-items: center;
     display: flex;
@@ -6,26 +6,19 @@
     height: 33px;
     background-color: #fff;
     border-radius: 5px;
-    color: #db5c4c;
-    border: 2px solid #db5c4c;
     transition: .2s;
     cursor: pointer;
     margin-top: 10px;
 }
 
+.my-button {
+    color: #db5c4c;
+    border: 2px solid #db5c4c;
+}
+
 .check-button {
-    width: 90px;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    height: 33px;
-    background-color: #fff;
-    border-radius: 5px;
     color: #79be00;
     border: 2px solid #79be00;
-    transition: .2s;
-    cursor: pointer;
-    margin-top: 10px;
 }
 
 .my-button:hover {

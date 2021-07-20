@@ -244,8 +244,33 @@ input, select {
   z-index: 1;
   transform: translateY(-50%);
   background-color: #fff;
+  border: 1px solid #e7e7e7;
+}
+
+.popup p {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px 0 10px 10px;
 }
 
 .save, .close {
   width: 30%;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: #e7e7e7;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #db5c4c;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #dc3b26;
 }
